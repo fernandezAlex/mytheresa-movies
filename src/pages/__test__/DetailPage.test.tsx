@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
-import DetailPage from "../DetailPage";
-import { WishlistProvider } from "../../context/WishListContext";
-import { getMovieDetails } from "../../services/movieService";
+import DetailPage from "../DetailPage.js";
+import { WishlistProvider } from "../../context/WishListContext.js";
+import { getMovieDetails } from "../../services/movieService.js";
 
 // Mock the service to avoid actual API calls
 jest.mock("../../services/movieService", () => ({

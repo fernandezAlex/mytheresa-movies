@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { WishlistProvider, useWishlist } from "./WishListContext";
+import { WishlistProvider, useWishlist } from "./WishListContext.js";
 
 // Wrap the hook rendering in the WishlistProvider
 const renderWishlistHook = () =>

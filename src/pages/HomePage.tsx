@@ -1,9 +1,9 @@
 import "../styles/components/_homePage.scss";
 import { useEffect, useState } from "react";
-import { Carousel } from "../components/Carousel";
-import { getMoviesByCategory } from "../services/movieService";
-import { Movie } from "../types/Movie";
-import { WishlistCarousel } from "../components/WishlistCarousel";
+import { Carousel } from "../components/Carousel.js";
+import { getMoviesByCategory } from "../services/movieService.js";
+import { Movie } from "../types/Movie.js";
+import { WishlistCarousel } from "../components/WishlistCarousel.js";
 
 const HomePage = () => {
   const [actionMovies, setActionMovies] = useState<Movie[]>([]);

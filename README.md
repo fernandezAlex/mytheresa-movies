@@ -17,8 +17,6 @@ The **Mytheresa Movies** project is a web application built to showcase movies i
 
 ### Project Requirements
 
-This project was built to meet the requirements of the coding challenge from Mytheresa, involving:
-
 - **Displaying Movies**: Using categories with a responsive carousel layout.
 - **Detail Page**: Showing detailed information about each movie.
 - **Wishlist Management**: Adding and removing movies from a wishlist, with persistence.

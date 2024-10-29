@@ -1,10 +1,10 @@
 import "../styles/components/_detailPage.scss";
 import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { getMovieDetails } from "../services/movieService";
-import { Movie } from "../types/Movie";
-import { useWishlist } from "../context/WishListContext";
-import { WishlistCarousel } from "../components/WishlistCarousel";
+import { getMovieDetails } from "../services/movieService.js";
+import { Movie } from "../types/Movie.js";
+import { useWishlist } from "../context/WishListContext.js";
+import { WishlistCarousel } from "../components/WishlistCarousel.js";
 
 interface LocationState {
   title?: string;

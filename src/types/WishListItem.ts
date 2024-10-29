@@ -1,4 +1,4 @@
-import { Movie } from "./Movie";
+import { Movie } from "./Movie.js";
 
 export interface WishlistItem {
   id: number;

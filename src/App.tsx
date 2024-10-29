@@ -1,8 +1,8 @@
 import "./styles/global.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { WishlistProvider } from "./context/WishListContext";
-import HomePage from "./pages/HomePage";
-import { DetailPage } from "../src/pages/DetailPage";
+import { WishlistProvider } from "./context/WishListContext.js";
+import HomePage from "./pages/HomePage.js";
+import { DetailPage } from "../src/pages/DetailPage.js";
 
 function App() {
   return (

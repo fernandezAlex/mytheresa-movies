@@ -1,5 +1,5 @@
-import { useWishlist } from "../context/WishListContext";
-import { Carousel } from "./Carousel";
+import { useWishlist } from "../context/WishListContext.js";
+import { Carousel } from "./Carousel.js";
 
 export const WishlistCarousel = () => {
   const { wishlist } = useWishlist();
