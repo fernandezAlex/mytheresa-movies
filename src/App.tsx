@@ -1,12 +1,19 @@
 import "./styles/global.scss";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { WishlistProvider } from "./context/WishListContext";
+import HomePage from "./pages/HomePage";
+import { DetailPage } from "../src/pages/DetailPage";
 
 function App() {
   return (
-    <>
-      <h1>Welcome to Mytheresa Movie App</h1>
-      <h2>Movies</h2>
-    </>
+    <WishlistProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/movie/:id" element={<DetailPage />} />
+        </Routes>
+      </Router>
+    </WishlistProvider>
   );
 }
 

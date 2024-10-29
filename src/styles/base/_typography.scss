@@ -1,0 +1,7 @@
+// src/styles/base/_typography.scss
+@use "../settings" as *;
+
+body {
+  font-family: $primary-font;
+  color: $primary-color;
+}

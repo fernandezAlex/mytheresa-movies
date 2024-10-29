@@ -1,0 +1,71 @@
+@use "../settings/index" as *;
+
+.carousel {
+  h2 {
+    font-size: 1.25rem;
+    color: $primary-color;
+    margin: 8px 0;
+    height: 100%;
+    padding-bottom: 8px;
+  }
+
+  .carousel-items {
+    display: flex;
+    overflow-x: auto;
+    gap: $gap;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    height: 100%;
+
+    // Hide default scrollbar but keep functionality
+    &::-webkit-scrollbar {
+      height: 8px;
+      background: $container-bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $primary-color;
+      border-radius: 8px;
+    }
+
+    // Improve for larger screens
+    @media (min-width: 768px) {
+      gap: 15px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    width: $item-width;
+    height: $item-height;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0px 2px 6px $shadow-color;
+    }
+
+    p {
+      margin-top: 5px;
+      font-size: 0.8rem;
+      text-align: center;
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    // Adjust for larger screens
+    @media (min-width: 768px) {
+      width: 150px;
+      border-radius: 8px;
+    }
+  }
+}

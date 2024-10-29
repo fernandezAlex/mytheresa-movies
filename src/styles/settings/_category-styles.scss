@@ -1,0 +1,21 @@
+$category-fonts: (
+  "action": "Arial, sans-serif",
+  "comedy": "'Comic Sans MS', cursive, sans-serif",
+  "drama": "'Times New Roman', serif",
+);
+
+$category-buttons: (
+  "action": #ff4d4d,
+  "comedy": #ffcc00,
+  "drama": #337ab7,
+);
+
+// Function to get font by category
+@function get-font($category) {
+  @return map-get($category-fonts, $category);
+}
+
+// Function to get button color by category
+@function get-button-color($category) {
+  @return map-get($category-buttons, $category);
+}
