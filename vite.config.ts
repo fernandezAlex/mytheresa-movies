@@ -6,6 +6,9 @@ export default defineConfig(({ mode }) => ({
   plugins: [react()],
   build: {
     outDir: "dist",
+    rollupOptions: {
+      input: "./index.html",
+    },
   },
   css: {
     preprocessorOptions: {
